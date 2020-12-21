@@ -1,0 +1,128 @@
+.course
+  &__title
+    margin-bottom: 20px
+    +rm(480)
+      margin-bottom: 25px
+    +rm(768)
+      margin-bottom: 30px
+    +rm(1024)
+      font-size: 50px
+      margin-bottom: 75px
+  &-list
+    display: flex
+    flex-direction: column
+    align-items: center
+    margin-bottom: 60px
+    position: relative
+    +rm(480)
+      flex-direction: row
+      justify-content: space-around
+      flex-wrap: wrap
+    +rm(640)
+      justify-content: center
+    +rm(1024)
+      justify-content: space-between
+      margin-bottom: 81px
+    +rm(1220)
+      margin-bottom: 91px
+    &::before
+      content: ''
+      width: 80%
+      height: 1px
+      background-color: rgba(0, 0, 0, 0.15)
+      position: absolute
+      left: 50%
+      bottom: -30px
+      transform: translateX(-50%)
+      +rm(1024)
+        width: 570px
+      +rm(1220)
+        bottom: -51px
+    &::after
+      content: ''
+      width: 20px
+      height: 20px
+      border: 1px solid rgba(0,0,0,.15)
+      background-color: #ebfaff
+      border-top: 0
+      border-left: 0
+      position: absolute
+      bottom: -40px
+      left: 50%
+      transform: translateX(-50%) rotate(45deg)
+      +rm(1220)
+        width: 21px
+        height: 21px
+        bottom: -61px
+  &__item
+    display: flex
+    flex-direction: column
+    align-items: center
+    max-width: 210px
+    margin-bottom: 20px
+    +rm(480)
+      max-width: 230px
+    +rm(1024)
+      max-width: 180px
+      margin-bottom: 0
+    +rm(1220)
+      max-width: 211px
+    &:nth-child(even)
+      +rm(1024)
+        margin-top: -100px
+    &:nth-child(4)
+      +rm(768)
+        margin-bottom: 0
+    &:last-child
+      margin-bottom: 0
+    &-desc
+      font-size: 17px
+      max-width: 85%
+      margin-bottom: 30px
+      text-align: center
+      position: relative
+      +rm(480)
+        max-width: 95%
+      +rm(1024)
+        max-width: 100%
+        text-align: left
+        padding-left: 40px
+        font-size: 14px
+        line-height: 21px
+        margin-bottom: 20px
+      +rm(1220)
+        padding-left: 42px
+        font-size: 17px
+      &::before
+        content: ''
+        width: 28px
+        height: 19px
+        background: url("../img/pulse.png") no-repeat center
+        position: absolute
+        bottom: -22px
+        left: 50%
+        transform: translateX(-50%)
+        +rm(480)
+          bottom: -24px
+        +rm(1024)
+          left: 0
+          bottom: 50%
+          transform: translateY(50%)
+      &--br
+        display: none
+        +rm(1220)
+          display: block
+    &-img
+      border-radius: 15px
+  &-info
+    display: block
+    text-align: center
+    font-size: 18px
+    +rm(640)
+      font-size: 20px
+    +rm(768)
+      font-size: 24px
+    +rm(1024)
+      font-size: 28px
+    +rm(1220)
+      font-size: 32px
