@@ -1,0 +1,238 @@
+.danger
+	position: relative
+	+rm(1220)
+		padding-top: 90px
+		padding-bottom: 103px
+	&::before
+		content: ''
+		position: absolute
+		bottom: 0
+		left: 0
+		width: 1170px	
+		left: 50%
+		transform: translateX(-50%)
+		background-color: #bebebe;
+		height: 1px
+	&__content
+		+rm(768)
+			display: flex
+	&__symptoms
+		background-color: #f5d2cf
+		padding: 15px 10px
+		position: relative
+		margin-bottom: 25px
+		+rm(768)
+			width: 324px
+			flex-shrink: 0
+			padding: 20px 10px
+			margin-right: 25px
+			margin-top: 5px
+			margin-bottom: 0
+		+rm(1024)
+			width: 400px
+			margin-right: 60px
+			padding: 30px 40px
+			margin-top: 7px
+			margin-left: 4px
+		+rm(1220)
+			margin-right: 90px
+			width: 446px
+			padding-top: 42px
+			padding-left: 47px
+			padding-right: 47px
+			padding-bottom: 33px
+		&::before, &::after
+			content: ''
+			position: absolute
+			width: 50px
+			height: 60px
+			+rm(1024)
+				width: 80px
+				height: 95px
+			+rm(1220)
+				width: 100px
+				height: 115px
+		&::before
+			border-top: 5px solid #cd2011
+			border-left: 5px solid #cd2011
+			left: -5px
+			top: -5px
+			+rm(1024)
+				border-width: 7px
+				left: -7px
+				top: -7px
+		&::after
+			width: 50px
+			height: 60px
+			border-top: 5px solid #cd2011
+			border-right: 5px solid #cd2011
+			right: -5px
+			top: -5px
+			+rm(1024)
+				border-width: 7px
+				top: -7px
+				right: -7px
+		&--border
+			position: absolute
+			left: 0
+			top: 0
+			width: 100%
+			height: 100%
+			z-index: -1
+			&::before, &::after
+				content: ''
+				position: absolute
+				width: 50px
+				height: 60px
+				+rm(1024)
+					width: 80px
+					height: 95px
+				+rm(1220)
+					width: 100px
+					height: 115px
+			&::before
+				border-bottom: 5px solid #cd2011
+				border-left: 5px solid #cd2011
+				left: -5px
+				bottom: -5px
+				+rm(1024)
+					border-width: 7px
+					left: -7px
+					bottom: -7px	
+			&::after
+				width: 50px
+				height: 60px
+				border-bottom: 5px solid #cd2011
+				border-right: 5px solid #cd2011
+				right: -5px
+				bottom: -5px
+				+rm(1024)
+					right: -7px
+					bottom: -7px
+					border-width: 7px
+	&__title
+		margin-bottom: 15px
+		+rm(768)
+			font-size: 30px
+		+rm(1024)
+			margin-bottom: 34px
+			font-size: 40px !important
+	&-symptoms__list
+		display: flex
+		flex-wrap: wrap
+		justify-content: center
+		+rm(1024)
+			justify-content: space-between
+	&-symptoms__item
+		width: 130px
+		margin-right: 5px
+		margin-left: 5px
+		+rm(400)
+			width: 150px
+		+rm(640)
+			width: 130px
+		+rm(1024)
+			width: 147px
+			margin-left: 0
+			margin-right: 0
+		+rm(1220)
+			width: 160px
+		&:nth-child(1),&:nth-child(2)
+			margin-bottom: 10px
+			+rm(1024)
+				margin-bottom: 20px
+			+rm(1220)
+				margin-bottom: 25px
+	&-symptoms__img
+		width: 110px
+		height: 110px
+		margin: 0 auto 10px
+		+rm(1024)
+			width: 131px
+			height: 131px
+		+rm(1220)
+			width: 141px
+			height: 141px
+			margin-bottom: 14px
+	&-symptoms__title
+		font-size: 17px
+		font-weight: 700
+		text-align: center
+		+rm(1024)
+			font-size: 20px
+		+rm(1220)
+			font-size: 22px
+			line-height: 1
+	&__info
+		+rm(768)
+			padding-top: 0px
+			border-top: 1px solid #bebebe
+			flex-direction: column
+			display: flex
+			justify-content: center
+	&-info__text 
+		text-align: center
+		font-weight: bold
+		font-size: 20px
+		+rm(640)
+			font-size: 24px
+		+rm(768)
+			text-align: left
+		+rm(1024)
+			font-size: 28px
+		+rm(1220)
+			font-size: 32px
+		&--first
+			margin-bottom: 10px
+			+rm(768)
+				margin-bottom: 25px
+			+rm(1024)
+				margin-bottom: 50px
+			+rm(1220)
+				margin-bottom: 78px
+		&--second
+			+rm(1024)
+				margin-bottom: 10px
+		&--accent
+			color: #fff
+			background-color: #cd2011
+			padding: 2px 3px
+			border-radius: 5px
+			display: block
+			text-transform: uppercase
+			margin-top: 4px
+			+rm(768)
+				margin-top: 5px
+				text-align: center
+				font-size: 21px
+				padding-top: 5px
+				padding-bottom: 5px
+			+rm(1024)
+				text-align: left
+				font-size: 28px
+				padding-left: 10px
+				display: inline-block
+				padding-right: 10px
+			+rm(1220)
+				font-size: 32px
+				padding-left: 15px
+				padding-right: 15px
+				padding-top: 8px
+				padding-bottom: 8px
+	&-info__big
+		text-align: center
+		font-weight: bold
+		font-size: 32px
+		line-height: 1
+		margin-bottom: 10px
+		+rm(640)
+			font-size: 36px
+		+rm(768)
+			font-size: 44px
+			margin-bottom: 25px
+			text-align: left
+		+rm(1024)
+			font-size: 60px
+			margin-bottom: 38px
+		+rm(1220)
+			font-size: 70px
