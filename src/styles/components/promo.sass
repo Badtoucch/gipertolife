@@ -1,0 +1,235 @@
+.promo
+	background-color: #ebfaff
+	+rm(1024)
+		margin-bottom: 300px
+		position: relative
+		position: relative
+		z-index: 0
+		background: none
+		&::after
+			content: ''
+			position: absolute
+			bottom: -1px
+			width: 100%
+			height: 103px
+			background: url(../img/promo-line.png)  center
+			z-index: -1
+		&::before
+			content: ''
+			position: absolute
+			height: 60%
+			width: 100%
+			background: url(../img/bg.png) no-repeat center #ebfaff;
+			left: 0
+			top: 0
+			z-index: -2
+	&__title
+		color: #cd2011
+		text-transform: uppercase
+		font-size: 35px
+		text-align: center
+		font-weight: bold
+		line-height: 1
+		margin-bottom: 5px
+		+rm(640)
+			font-size: 40px
+		+rm(768)
+			font-size: 45px
+		+rm(1024)
+			text-align: left
+			font-size: 55px
+			margin-bottom: 15px
+		+rm(1220)
+			font-size: 65px
+	&__subtitle
+		font-weight: 400
+		text-align: center
+		font-size: 20px
+		text-transform: uppercase
+		margin-bottom: 10px
+		color: #444444
+		+rm(640)
+			font-size: 22px
+			margin-bottom: 10px
+		+rm(768)
+			font-size: 24px
+		+rm(1024)
+			text-align: left
+			font-size: 26px
+			margin-bottom: 25px
+		+rm(1220)
+			font-size: 30px
+	&__list
+		max-width: 310px
+		margin: 0 auto 25px
+		+rm(640)
+			max-width: 100%
+			width: 100%
+			display: flex
+			justify-content: space-between
+		+rm(1024)
+			max-width: 445px
+			width: 100%
+			margin-left: 0
+			position: relative
+	&__item
+		display: flex
+		align-items: center
+		+rm(1024)
+			position: absolute
+		&:not(:last-child)
+			margin-bottom: 10px
+			+rm(640)
+				margin-bottom: 0
+		+rm(640)
+			display: flex
+			flex-direction: column
+			align-items: center
+			width: 32%
+		+rm(1024)
+			width: 100%
+		&--1
+			+rm(1024)
+				flex-direction: row
+				position: absolute
+				top: -79px
+				left: 260px
+		&--2
+			+rm(1024)
+				top: -25px
+				left: -70px
+		&--3
+			+rm(1024)
+				top: 190px
+				left: -90px
+	&-item__icon
+		display: flex
+		justify-content: center
+		align-items: center
+		flex-direction: column
+		width: 61px
+		height: 61px
+		border: 1px solid #219ed4
+		flex-shrink: 0
+		margin-right: 10px
+		border-radius: 50%
+		position: relative
+		z-index: 0
+		font-size: 18px
+		line-height: 1
+		color: #fff
+		font-weight: bold
+		&::before
+			content: ''
+			position: absolute
+			width: 75%
+			height: 75%
+			border-radius: 50%
+			top: 50%
+			left: 50%
+			transform: translate(-50%, -50%)
+			background-color: #219ed4
+			z-index: -1
+		&::after
+			+rm(1024)
+				content: ''
+				position: absolute
+				bottom: -7px
+				left: 25px
+				width: 15px
+				height: 15px
+				background-color:#ebfaff
+				border-right: 1px solid #219ed4
+				border-bottom: 1px solid #219ed4
+				transform: scaleZ(0.5) rotate(39deg)
+				z-index: -2
+		&--small
+			font-size: 10px
+			font-weight: 300
+			margin-bottom: 3px
+		font-size: 18px
+		img
+			max-height: 33px
+		+rm(640)
+			margin-bottom: 10px
+			margin-right: 0
+		&--1
+			+rm(1024)
+				margin-bottom: 0
+				margin-right: 10px
+	&-item__text
+		color: #222222;
+		font-weight: 700
+		+rm(640)
+			text-align: center
+		&--1
+			+rm(1024)
+				max-width: 200px
+				text-align: left
+		&--2
+			+rm(1024)
+				text-align: right
+	&__pack
+		max-width: 210px
+		margin: 0 auto 15px
+		position: relative
+
+		z-index: 2
+		+rm(640)
+			margin: 0
+			margin-right: 30px
+		+rm(768)
+			margin-right: 50px
+		+rm(1024)
+			max-width: 210px
+			width: 100%
+			margin-left: 250px
+			z-index: 0
+			margin-bottom: 45px
+		&::before
+			+rm(1024)
+				content: ''
+				position: absolute
+				left: 50%
+				top: 50%
+				transform: translate(-60%, -60%)
+				z-index: -1
+				width: 400px
+				height: 400px
+				background: url(../img/pack__border.png) no-repeat center / contain
+				z-index: -1
+	&__info
+		text-align: center
+		margin-bottom: 10px
+		color: #444444
+		font-weight: 500
+		+rm(640)
+			margin-bottom: 15px
+		+rm(1024)
+			text-align: left
+			margin-bottom: 110px
+	&__prod
+		+rm(640)
+			display: flex
+			align-items: center
+			flex-wrap: wrap
+			justify-content: center
+		+rm(1024)
+			flex-direction: column
+			align-items: flex-start
+.discount
+	position: absolute
+	top: 20px
+	right: -10px
+	background: url(../img/discount.png) no-repeat center / contain
+	width: 90px
+	height: 90px
+	display: flex
+	justify-content: center
+	align-items: center
+	&__number
+		color: #222222
+		font-weight: 900
+		font-size: 25px
+		text-align: center
+		transform: rotate(-38deg)

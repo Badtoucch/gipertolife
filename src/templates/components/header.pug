@@ -1,0 +1,18 @@
+header.header
+	.container
+		.header__wrapper
+			.header__logo GIPERTOLIFE
+			nav.header__nav 
+				a.nav__item.scroll-link(href="#reviews")
+					picture
+						<source media="(max-width: 999px)" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mP8/5+hHgAHggJ/PchI7wAAAABJRU5ErkJggg==">
+						img.nav__item-image(src='img/header_icon_rev.png', alt='reviews')
+					span.nav__item-text Отзывы
+				a.nav__item.scroll-link(href="#composition")
+					picture
+						<source media="(max-width: 999px)" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mP8/5+hHgAHggJ/PchI7wAAAABJRU5ErkJggg==">
+						img.nav__item-image(src='img/header_icon_cons.png', alt='consist')
+					span.nav__item-text Состав
+			.header__timer
+				include timer
+			button.btn.ever-popup-btn.header__button Заказать

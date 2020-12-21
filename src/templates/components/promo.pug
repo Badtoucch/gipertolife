@@ -1,0 +1,52 @@
+section.promo.block
+	.container
+		.promo__content
+			h1.promo__title GIPERTOLIFE
+			h2.promo__subtitle ПОМОГАЕТ НА ЛЮБОЙ СТАДИИ ГИПЕРТОНИИ
+			p.promo__info Обладает способностью:
+			.promo__prod
+				ul.promo__list
+					li.promo__item.promo__item--1
+						span.promo-item__icon.promo-item__icon--1
+							img(src="img/promo-icon1.png", alt="icon")
+						p.promo-item__text.promo-item__text--1 Скорректировать артериальное давлени
+					li.promo__item.promo__item--2
+						span.promo-item__icon.promo-item__icon--2 6
+							span.promo-item__icon--small hovers 
+						p.promo-item__text.promo-item__text--2 Обеспечить эффект в первые 6 часов
+					li.promo__item.promo__item--3
+						span.promo-item__icon.promo-item__icon--3 
+							img(src="img/promo-icon3.png", alt="icon")
+						p.promo-item__text.promo-item__text--3 Улучшить тонус и эластичность сосудов
+				.promo__pack
+					picture
+						source(srcset="img/pack.webp", type="image/webp")
+						img(src="img/pack.png", alt="girl")
+					.discount
+						span.discount__number -50%
+				.form__content
+					.form__price
+						.form__price-val
+							h5.form__price-title Старая цена
+							p.form__price-before
+								span.x_currency.form__price-before_size руб
+								span.x_price_previous.form__price-before_line 1980
+						.form_before
+						.form__price-val
+							h5.form__price-title.form__price-title--new Новая цена
+							p.form__price-after
+								span.x_currency.form__price-after_size руб
+								span.x_price_current 990
+					form(action="/submit", method="POST", class="x_order_form form__main")
+						label.form__input--wrap
+							span.form__input--icon
+								img(src="img/icon_name.png", alt="")
+							input.form__input(placeholder="Мое имя", type="text",  name="name")
+						label.form__input--wrap
+							span.form__input--icon
+								img(src="img/icon_phone.png", alt="")
+							input.form__input(placeholder="Мой телефон", type="tel",  name="phone")
+						button.btn.form__btn Заказать со скидкой
+					.form__lastpack Осталось  
+						span.lastpack 80
+						|  упаковок

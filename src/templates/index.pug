@@ -1,0 +1,16 @@
+extends settings/layout
+
+prepend html
+  - const lang = "id";
+
+prepend head
+  - const pageTitle = "Gipertolife Beli Gipertolife Tidak mahal, harga, ulasan, pesan Gipertolife Sekarang!";
+  - const themeColor = "#ffffff";
+
+append head
+
+append content
+  include components/header
+  include components/promo
+append scripts
+  script(defer src="https://179523.selcdn.ru/public/delivery-banner/banner.js")
