@@ -1,0 +1,193 @@
+.board
+	+rm(1024)
+		padding-top: 40px !important
+		padding-bottom: 0 !important
+	&__content
+		position: relative
+		+rm(1024)
+			max-width: 720px
+			margin-left: auto
+			padding-bottom: 23px
+		+rm(1220)
+			padding-bottom: 18px
+		&::before
+			+rm(768)
+				content: ''
+				width: 132px;
+				height: 97px;
+				content: ''
+				position: absolute
+				left: 50%
+				transform: translateX(-50%)
+				bottom: -40px
+				background: url(../img/board-doctor.webp) no-repeat center / contain
+			+rm(1024)
+				width: 274px
+				height: 293px
+				left: -273px
+				bottom: 0
+				transform: none
+			+rm(1220)
+				width: 355px
+				height: 378px
+				left: -373px
+		+rm(1220)
+			max-width: 869px
+
+
+	&__list
+		margin-bottom: 15px
+		padding-bottom: 15px
+		border-bottom: 1px solid #c6c6c6;
+		+rm(640)
+			margin-bottom: 20px
+			display: flex
+		+rm(1024)
+			justify-content: space-between
+			border: 0
+		+rm(1220)
+			padding-bottom: 0px
+			margin-bottom: 25px
+	&-list__item
+		font-size: 16px
+		line-height: normal
+		text-align: center
+		position: relative
+		padding-top: 35px
+		max-width: 400px
+		margin-left: auto
+		margin-right: auto
+		+rm(640)
+			width: 33%
+		+rm(768)
+		+rm(1024)
+			max-width: 100%
+			text-align: left
+			line-height: 23px
+			width: 33.33%
+			margin-left: 0
+			margin-right: 0
+			position: relative
+			margin-top: 0px
+			padding-top: 45px
+		+rm(1220)
+			font-size: 17px
+			line-height: 24px
+			padding-top: 62px
+			margin-left: 0
+			margin-right: 0
+		a
+			color: #000 !important
+		b
+			font-style: normal
+		&::before
+			content: ''
+			position: absolute
+			top: 0
+			left: 50%
+			transform: translateX(-50%)
+			width: 40px;
+			height: 27px;
+			background: url(../img/pulse.png) no-repeat center / contain
+			+rm(1024)
+				transform: none
+				left: 25px
+				width: 45px;
+				height: 32px;
+			+rm(1220)
+				left: 50px
+		&:not(:last-child)
+			margin-bottom: 12px
+			+rm(640)
+				margin-bottom: 0
+			+rm(1024)
+				padding-right: 25px
+			+rm(1220)
+				padding-right: 50px
+			&::after
+				+rm(1024)
+					content: ''
+					position: absolute
+					right: 0
+					bottom: 0
+					height: 70%
+					width: 1px
+					background-color: #d9dcdd
+					+rm(1220)
+						height: 66%
+		&:not(:first-child)
+			+rm(1024)
+				padding-left: 25px
+			+rm(1220)
+				padding-left: 50px
+	&__info
+		display: flex
+		flex-wrap: wrap
+		justify-content: center
+		align-items: center
+		+rm(640)
+			justify-content: start
+		+rm(1024)
+			align-items: center
+	&-info__name
+		font-size: 18px
+		font-weight: 700
+		line-height: normal
+		width: 100%
+		text-align: center
+		+rm(640)
+			text-align: center
+			margin-right: auto
+		+rm(768)
+			max-width: 252px
+			text-align: left
+		+rm(1024)
+			max-width: 33%
+			width: auto
+			margin-right: 42px
+			position: relative
+		+rm(1220)
+			font-size: 20px
+			line-height: normal
+			max-width: 29%
+			padding-top: 33px
+		&::before
+			+rm(1024)
+				content: ''
+				position: absolute
+				top: -15px
+				left: 0
+				width: 60px
+				height: 1px
+				background-color: #c6c6c6
+			+rm(1220)
+				top: 0px
+		&--prof
+			font-size: 16px
+			font-weight: 400
+			line-height: normal
+			font-style: italic
+			display: block
+			margin-top: 3px
+			+rm(1220)
+				margin-top: 14px
+	&-list__item1
+		+rm(1220)
+			max-width: 250px
+	// &-list__item2
+	// 	+rm(1024)
+	// 		max-width: 264px
+	&-list__item3
+		+rm(1220)
+			width: 323px	
+.board-info__sign
+	max-width: 80px
+	+rm(1220)
+		max-width: 90px
+.board-info__good
+	max-width: 98px
+	+rm(1220)
+		max-width: 133px
+.no-webp
+	.board__content::before
+		background: url(../img/board-doctor.png) no-repeat center / contain
