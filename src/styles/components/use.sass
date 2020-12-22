@@ -1,0 +1,78 @@
+.use
+	&__title
+		margin-bottom: 15px
+		+rm(768)
+			margin-bottom: 35px
+		+rm(1220)
+			margin-bottom: 50px
+	&__content
+		display: flex
+		flex-wrap: wrap
+		justify-content: center
+		
+	&__pack
+		flex-shrink: 0
+		margin-bottom: 15px
+		max-width: 180px
+		img
+			margin: 0 auto
+		+rm(640)
+			margin-bottom: 0
+			margin-right: 25px
+		+rm(768)
+			max-width: 210px
+		+rm(1024)
+			margin-right: 50px
+			max-width: 218px
+		+rm(1220)
+			margin-right: 83px
+			max-width: 284px
+	&__list
+		max-width: 340px
+		+rm(768)
+			max-width: 400px
+		+rm(1220)
+			max-width: 600px
+	&__item
+		display: flex
+		align-items: center
+		padding: 10px 10px
+		border: 1px solid #e9e9e9;
+		background-color: #ebfaff;
+		border-radius: 10px
+		&:not(:last-child)
+			margin-bottom: 10px
+			+rm(1024)
+				margin-bottom: 20px
+			+rm(1220)
+				margin-bottom: 30px
+		+rm(768)
+			padding-right: 30px
+		+rm(1220)
+			padding: 16px 20px
+			padding-right: 120px
+	&-item__icon
+		width: 66px;
+		height: 66px;
+		background-color: #ffffff;
+		border-radius: 50%
+		display: flex
+		justify-content: center
+		align-items: center
+		flex-shrink: 0
+		margin-right: 10px
+		padding: 15px
+		+rm(768)
+			width: 76px;
+			height: 76px;
+			margin-right: 20px
+		+rm(1220)
+			height: 86px
+			width: 86px
+	&-item__text
+		font-weight: 700;
+		font-size: 18px
+		+rm(768)
+			font-size: 20px
+		+rm(1220)
+			font-size: 22px

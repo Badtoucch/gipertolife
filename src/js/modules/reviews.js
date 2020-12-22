@@ -48,7 +48,7 @@ export default () => {
 
   $(".feedback-btn").click(function () {
     const reviewInput1 = $(".input__val-1").val().length,
-      // reviewInput2 = $(".input__val-2").val().length,
+      reviewInput2 = $(".input__val-2").val().length,
       // reviewInput3 = $(".input__val-3").val().length,
 			reviewInput4 = $(".input__val-4").val().length;
 		const pattern =  /^[A-Za-zА-Яа-яЁё]{0,}$/;
@@ -64,11 +64,11 @@ export default () => {
 		// } else {
 		// 	$(".feedback-city").addClass('error');
 		// }
-		// if (reviewInput2 !== 0 && Number($(".input__val-2").val()) >= 18 && Number($(".input__val-2").val()) <= 120) {
-		// 	$(".feedback-age").removeClass('error');
-		// } else {
-		// 	$(".feedback-age").addClass('error');
-		// }
+		if (reviewInput2 !== 0 && Number($(".input__val-2").val()) >= 18 && Number($(".input__val-2").val()) <= 120) {
+			$(".feedback-age").removeClass('error');
+		} else {
+			$(".feedback-age").addClass('error');
+		}
 		// && reviewInput3 !== 0 && cityTest && reviewInput2 !== 0 && Number($(".input__val-2").val()) >= 18 && Number($(".input__val-2").val()) <= 120
 		if (reviewInput4 !== 0) {
 			$(".feedback-text").removeClass('error');
@@ -76,7 +76,7 @@ export default () => {
 			$(".feedback-text").addClass('error');
 		}
     if (
-      reviewInput1 !== 0 && nameTest  && reviewInput4 !== 0
+      reviewInput1 !== 0 && nameTest  && reviewInput4 !== 0 && reviewInput2 !== 0 && Number($(".input__val-2").val()) >= 18 && Number($(".input__val-2").val()) <= 120
     ) {
       $(".input__val-1").val("");
       // $(".input__val-2").val("");
