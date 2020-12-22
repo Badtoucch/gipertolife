@@ -1,0 +1,50 @@
+.form
+	.form__wrapper
+		h2.form__title Внимание!
+		.form__subtitle.text-bold Только сегодня 
+			span.date-0.form__subtitle-date.text-bold(data-format="dd monthFull") 
+		.form__price
+			.form__price-val
+				h5.form__price-title Старая цена
+				p.form__price-before
+					span.x_currency.form__price-before_size руб
+					span.x_price_previous.form__price-before_line 1980
+			.form_before
+			.form__price-val
+				h5.form__price-title.form__price-title--new Новая цена
+				p.form__price-after
+					span.x_currency.form__price-after_size руб
+					span.x_price_current 990
+		form(action="/submit", method="POST", class="x_order_form form__main")
+			label.form__input--wrap
+				span.form__input--icon
+					img(src="img/icon_name.png", alt="")
+				input.form__input(placeholder="Мое имя", type="text",  name="name")
+			label.form__input--wrap
+				span.form__input--icon
+					img(src="img/icon_phone.png", alt="")
+				input.form__input(placeholder="Мой телефон", type="tel",  name="phone")
+			button.btn.form__btn.popup__btn Заказать со скидкой
+			.form__left 
+				.online-people.online-1.active
+					img(src="img/eye.png" alt="online")
+					p Сейчас на сайте 
+						span.text-bold.online-dynamic.online-dynamic-1 27	
+						|	 человек
+				.online-people.online-2
+					img(src="img/eye.png" alt="online")
+					p <span class='text-bold online-dynamic online-dynamic-2'>116</span> продаж за последний час
+			.form__left.form__last 
+				.form__lastpack Осталось  
+					span.lastpack 80
+					|  упаковок
+	
+	//- .form__left 
+	//- 	.online-people.online-1.active
+	//- 		img(src="img/eye.png" alt="online")
+	//- 		p Сейчас на сайте 
+	//- 			span.text-bold.online-dynamic.online-dynamic-1 27	
+	//- 			|	 человек
+	//- 	.online-people.online-2
+	//- 		img(src="img/eye.png" alt="online")
+	//- 		p <span class='text-bold online-dynamic online-dynamic-2'>116</span> продаж за последний час

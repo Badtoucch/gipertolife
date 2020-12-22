@@ -1,9 +1,19 @@
 .ever-popup-build
 	.my-popup(id="cloneThis")
-		.my-popup__wrap
+		.my-popup__wrap.bg
 			.my-popup__left
+				h3.popup__title 
+					span.popup__title-accent.accent
+						|GIPERTOLIFE 
+						br
+					|ПОМОГАЕТ НА ЛЮБОЙ СТАДИИ
+					|ГИПЕРТОНИИ
 				.my-popup__pack.pack
-					img(src="img/promo-prod.png" alt="product")
+					picture
+						source(srcset="img/pack.webp", type="image/webp")
+						img(src="img/pack.png", alt="girl")
+					.discount
+						span.discount__number -50%
 			.my-popup__right
 				.popup-form-wrap
-					include form
+					include form-popup

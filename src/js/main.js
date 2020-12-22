@@ -5,6 +5,7 @@ import illness from './modules/illness.js';
 import reviews from './modules/reviews.js';
 import banner from './modules/banner.js';
 import stat from './modules/stat.js';
+import popupForm from './modules/form-popup.js';
 function main() {
 	scrollSmooth();
 	animation();
@@ -12,7 +13,8 @@ function main() {
   reviews();
   banner()
 	reviews();
-	stat();
+  stat();
+  popupForm();
 }
 
 if (document.documentElement.clientWidth < 480) {
