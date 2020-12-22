@@ -2,11 +2,13 @@ import './helpers/postDate';
 import scrollSmooth from './helpers/smooth-scroll.js';
 import animation from './modules/animation.js';
 import illness from './modules/illness.js';
+import reviews from './modules/reviews.js';
 
 function main() {
 	scrollSmooth();
 	animation();
-	illness()
+	illness();
+	reviews()
 }
 
 if (document.documentElement.clientWidth < 480) {
