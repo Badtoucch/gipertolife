@@ -2,3 +2,22 @@
 	background-color: #ebfaff
 	+rm(1024)
 		background: url(../img/bg.png) no-repeat center #ebfaff;
+		position: relative
+	&::before
+		+rm(1220)
+			content: ''
+			position: absolute
+			top: 0
+			left: 0
+			width: 100%
+			height: 97px
+			background: url(../img/line-top.png) repeat center #ebfaff;
+	&::after
+		+rm(1220)
+			content: ''
+			position: absolute
+			bottom: 0
+			left: 0
+			width: 100%
+			height: 97px
+			background: url(../img/line-bottom.png) repeat center #ebfaff;
