@@ -35,7 +35,11 @@
   //     padding-left: 40px;
   //     background-position: 0 50%;
   //   }
-  // }
+	// }
+	& .bg::after, .bg::before {
+		content: none;
+	}
+
 }
 
 .ever-popup__close{
@@ -106,8 +110,8 @@ transform: none;
     right: 60px;
 	}
 	.discount {
-		top: 61px;
-    right: 6px;
+		top: 80px;
+    right: -10px;
 	}
 }
 
@@ -156,18 +160,18 @@ max-width: 345px;
 			margin-bottom: 10px;
 		}
 	}
-	&__price{
-		display: flex;
-		margin-bottom: 15px;
-		flex-direction: column;
-		align-items: center;
-		.price__old{
-			font-size: 27px;
-		}
-		.price__new{
-			font-size: 36px;
-		}
-	}
+	// &__price{
+	// 	display: flex;
+	// 	margin-bottom: 15px;
+	// 	flex-direction: column;
+	// 	align-items: center;
+	// 	.price__old{
+	// 		font-size: 27px;
+	// 	}
+	// 	.price__new{
+	// 		font-size: 36px;
+	// 	}
+	// }
 &__btn{
 	font-size: 18px;
 }
