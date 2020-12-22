@@ -1,0 +1,163 @@
+.banner
+	display: none
+	+rm(1024)
+		background-color: #def5ff
+		padding: 7px 0
+		box-shadow: 2px 4px 4px rgba(3, 3, 3, 0.05)
+		position: fixed
+		left: 0
+		right: 0
+		bottom: 60px
+		z-index: 40
+	&__content
+		+rm(1024)
+			max-width: 96%
+			display: flex
+			align-items: center
+			justify-content: space-between
+			position: relative
+			margin: 0 auto
+		+rm(1220)
+			max-width: 100%
+			justify-content: center
+			&::before
+				+rm(1220)
+					content: ''
+					width: 0.5px
+					height: 30px
+					background-color: #b8b8b8
+					position: absolute
+					top: 50%
+					left: 46.5%
+					transform: translate(-50%,-50%)
+	&__pack
+		+rm(1024)
+			max-width: 43px
+			margin-right: 5px
+			flex-shrink: 0
+		+rm(1220)
+			margin-right: 23px
+	&__btn
+		+rm(1024)
+			max-width: 200px
+			margin-left: 10px
+			width: 100%
+			flex-shrink: 0
+			font-size: 18px
+			font-weight: 700
+			padding: 15px 5px
+			border-width: 2px
+			height: auto
+			margin-bottom: 0
+			position: relative
+		+rm(1220)
+			margin-left: 20px
+			padding: 11px 5px
+		&:before
+			+rm(1024)
+				pointer-events: none!important
+				position: absolute
+				left: 50%
+				transform: translateX(-50%)
+				bottom: -14px
+				font-size: 12px
+				width: 100%
+				font-weight: 400
+	&__title
+		position: relative
+		&::after 
+			+rm(1024)
+				display: flex
+				justify-content: center
+				align-items: center
+				content: ''
+				position: absolute
+				right: -75px
+				top: 52%
+				transform: translateY(-50%)
+				background-image: url(../img/discount.png)
+				background-repeat: no-repeat
+				background-position: center
+				background-size: contain
+				width: 68px
+				height: 65px
+				justify-content: center
+				padding-bottom: 5px
+		+rm(1024)
+			font-size: 19px
+			font-weight: 700
+			line-height: normal
+			margin-right: 80px
+			flex-shrink: 0
+			+rm(1220)
+				font-size: 20px
+				max-width: inherit
+				margin-right: 207px
+				padding-right: 18px
+		&--small 
+			font-size: 25px
+			display: block
+			position: relative
+			&::after
+				+rm(1024)
+					content: '-50%'
+					font-size: 18px
+					font-weight: 900
+					position: absolute
+					right: -65px
+					top: 5px
+					z-index: 2
+					transform: rotate(-35deg)
+					color: #000
+				+rm(1220)
+					right: -80px
+
+	&__discount
+		+rm(1024)
+			flex-shrink: 0
+			color: #f7f8f9
+			font-size: 20px
+			font-weight: 900
+			line-height: 1
+			display: flex
+			align-items: center
+			justify-content: center
+			background: #000
+			width: 80px
+			height: 61px
+			background: url(../img/action.png) no-repeat center/contain
+	.timer__text
+		+rm(1024)
+			display: block
+			font-size: 14px
+			// color: #fff
+			max-width: 100%
+			text-align: center
+		+rm(1220)
+			display: block
+			max-width: 109px
+			margin-right: 12px
+	&__timer
+		+rm(1024)
+			flex-shrink: 0
+		+rm(1220)
+			display: flex
+		.timer__hours,.timer__minutes,.timer__seconds
+			display: flex
+		.timer__dots
+			color: #000
+	.form__price
+		margin-right: 15px
+		+rm(1024)
+			width: 240px
+	.timer
+		flex-direction: column
+	.timer__text
+		+rm(1024)
+			margin-bottom: 5px
+			font-size: 14px
+		+rm(1220)
+			margin-bottom: 0
+			margin-right: 19px
+
+
