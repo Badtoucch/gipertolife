@@ -51,7 +51,7 @@
 .my-popup__wrap {
   	width: 300px;
     margin: 0 auto;
-    padding: 15px 0 10px;
+    padding: 15px 0 15px;
     display: flex;
     align-items: center;
     border-radius: 10px;
@@ -88,8 +88,24 @@
 
 transform: none;
 	}
+	& .form__input--icon {
+		top: 40%;
+	}
+	& .form__price-before, .form__price-after {
+		margin-top: 0px;
+	}
+	& .form__price{
+		flex-direction: column;
+		align-items: center;
+		text-align: center;
+	}
+	& .form__price-title {
+		text-align: center;
+	}
 }
-
+.first-val {
+	margin-bottom: 10px!important;
+}
 
 .my-popup__pack {
 	max-width: 294px;
@@ -150,7 +166,7 @@ max-width: 345px;
 		font-size: 20px;
 		font-weight: 900;
 		line-height: 1;
-		margin-bottom: 12px;
+		margin-bottom: 32px;
 		text-align: left;
 		width: 90%;
 		display: flex;
@@ -174,6 +190,7 @@ max-width: 345px;
 	// }
 &__btn{
 	font-size: 18px;
+	margin-bottom: 5px;
 }
 &__lastpack{
 	font-size: 18px;
@@ -275,7 +292,7 @@ max-width: 345px;
 }
 .ever-popup__close {
 	@include rm(1000) {
-		right: -30px!important;
+		right: 0px!important;
 	}
 	@include rm(1220) {
 		right: 45px!important;
@@ -284,13 +301,17 @@ max-width: 345px;
 .form__last {
 	position: relative;
 	margin-bottom: 0!important;
+	height: 0!important;
+	@include rm(1000) {
+		height: 35px!important;
+	}
 	&::before {
 		content: '';
 		width: 100%;
 		height: 1px;
 		background-color: rgba(180, 159, 145, 0.5);
 		position: absolute;
-		top: 0;
+		top: -4px;
 		left: 50%;
 		transform: translateX(-50%);
 	}

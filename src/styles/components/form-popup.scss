@@ -17,8 +17,11 @@
     & .form__input--wrap, .form__main, .form__lastpack, .form__btn {
       width: 100%;
     }
-    .form__input {
-      margin-bottom: 15px;
+    @include rm(1024) {
+      .form__input {
+        margin-bottom: 15px;
+      }
+      
     }
     
   }
@@ -82,7 +85,7 @@
     width: 100%;
     height: 35px;
     margin-bottom: 5px;
-    overflow: hidden;
+    // overflow: hidden;
     .lastpack {
       font-size: 20px;
       font-weight: 900;
@@ -133,83 +136,7 @@
     opacity: 1;
   }
 }
-// .form__price {
-//   display: -webkit-box;
-//   display: -ms-flexbox;
-//   display: flex;
-//   -webkit-box-pack: space-around;
-//   -ms-flex-pack: space-around;
-//   justify-content: space-around;
-//   width: 100%;
-//   margin-top: 7px;
-//   position: relative;
-//   margin-bottom: 12px;
-// }
-// .form__price-val {
-//   text-align: left;
-// }
-// .form__price-title {
-//   font-size: 13px;
-//   color: #666;
-//   padding-bottom: 5px;
-// }
-// .form__price-title--new {
-//   color: #000000;
-//   font-size: 14px;
-//   font-weight: 500;
-// }
-// .form__price-before {
-//   font-size: 28px;
-//   color: #a2a1a1;
-//   margin-top: 5px;
-// }
-// .form__price-before_line {
-//   position: relative;
-// }
-// .form__price-before_line::after,
-// .form__price-before_line::before {
-//   content: "";
-//   width: 100%;
-//   height: 1px;
-//   background-color: #f23e2b;
-//   position: absolute;
-//   top: 50%;
-//   left: 0;
-// }
-// .form__price-before_line::before {
-//   -webkit-transform: rotate(15deg);
-//   transform: rotate(15deg);
-// }
-// .form__price-before_line::after {
-//   -webkit-transform: rotate(-15deg);
-//   transform: rotate(-15deg);
-// }
-// .form__price-before_size {
-//   font-size: 16px;
-// }
-// .form_before {
-//   display: block;
-//   width: 1px;
-//   margin-top: 3px;
-//   height: 50px;
-//   background-color: #d1d0d0;
-// }
-// .form__price-after {
-//   font-size: 40px;
-//   color: #000;
-//   font-weight: 900;
-//   margin-top: -5px;
-//   position: relative;
-//   margin-right: -7px;
-// }
-// .form__price-after_size {
-//   font-size: 16px;
-//   font-weight: 400;
-// }
-// .form__price-after .x_currency {
-//   color: #000;
-//   font-weight: 500;
-// }
+
 .online-people {
   display: flex;
   align-items: center;
